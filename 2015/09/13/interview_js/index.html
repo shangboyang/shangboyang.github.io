@@ -25,7 +25,7 @@ update log：v0.1.0 2015-09-13
 <meta property="og:image" content="http://www.shangboyang.com/img/tech/i_js_1.jpg">
 <meta property="og:image" content="http://www.shangboyang.com/img/tech/i_js_0.jpg">
 <meta property="og:image" content="http://www.shangboyang.com/img/comic/longmao.jpg">
-<meta property="og:updated_time" content="2015-09-13T17:21:59.000Z">
+<meta property="og:updated_time" content="2016-04-27T16:31:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《前端十万个为什么》之JS卷">
 <meta name="twitter:description" content="很早以前就想收集一套自己整理的前端题库，包含笔试与面试，今日百无聊赖就打发下时间吧。
@@ -141,11 +141,12 @@ update log：v0.1.0 2015-09-13
 <p>BTW，这篇文章会持续更新……</p>
 <p><strong>update log：</strong><br><code>v0.1.0 2015-09-13</code></p>
 <p><img src="/img/tech/i_js_0.jpg" alt=""></p>
-<h3 id="一、基础篇">一、基础篇</h3><p><strong>1.touch事件与click事件的区别？（by点评）</strong><br><strong>2.何为事件冒泡与事件捕获？（事件流的三个阶段是很重要的基础）</strong><br><strong>3.什么是严格模式？</strong><br><strong>4.如何理解DOMReady？</strong><br><strong>5.JS的特点？</strong><br><strong>6.短路表达式的好处？</strong><br><strong>7.伪数组有哪些？</strong><br><strong>8.JS的基本数据类型有哪些？</strong><br><strong>9.什么是事件代理？</strong><br><strong>10.如何理解闭包和作用域链？（真是逢面必考，但是如何答的更完美需要好好整理）</strong><br><strong>11.如何解决跨域请求？(jsonp已经被用烂，要尽量尝试用多种方式实现跨域)</strong><br><strong>12.如何实现回调函数？</strong><br><strong>13.setTimeout与setInterval函数的区别与场景？</strong><br><strong>14.如何理解Ajax请求和XMLHTTPRequest对象？</strong><br><strong>15.apply和call方法有形似之处，请说出二者的区别？</strong><br><strong>16.如何改变this的指向？（问题上题类似，但回答方式颇有不同）</strong></p>
+<h3 id="一、基础篇">一、基础篇</h3><p><strong>1.touch事件与click事件的区别？（by点评）</strong><br><strong>2.何为事件冒泡与事件捕获？（事件流的三个阶段是很重要的基础）</strong><br><strong>3.什么是严格模式？</strong><br><strong>4.如何理解DOMReady？</strong><br><strong>5.JS的特点？</strong><br><strong>6.短路表达式的好处？</strong><br><strong>7.伪数组有哪些？</strong><br><code>arguments, NodeList...</code><br><strong>8.JS的基本数据类型有哪些？</strong><br><strong>9.什么是事件代理？</strong><br><strong>10.如何理解闭包和作用域链？（真是逢面必考，但是如何答的更完美需要好好整理）</strong><br><strong>11.如何解决跨域请求？(jsonp已经被用烂，要尽量尝试用多种方式实现跨域)</strong><br><strong>12.如何实现回调函数？</strong><br><strong>13.setTimeout与setInterval函数的区别与场景？</strong><br><strong>14.如何理解Ajax请求和XMLHTTPRequest对象？</strong><br><strong>15.apply和call方法有形似之处，请说出二者的区别？</strong><br><strong>16.如何改变this的指向？（问题上题类似，但回答方式颇有不同）</strong></p>
 <h3 id="二、面向对象篇">二、面向对象篇</h3><p><strong>1.如何理解prototype和实现继承？</strong><br><strong>2.用OOP思想如何介绍下自己？（Baidu的题很有趣）</strong></p>
-<h3 id="三、正则篇">三、正则篇</h3><p><strong>1.匹配字符串以字母开头，后面可以是数字，下划线，字母，长度为6-30？</strong><br>答：<code>/^[a-zA-Z]\w{5,29}$/</code></p>
-<h3 id="四、库与框架篇">四、库与框架篇</h3><p><strong>1.jQuery是如何实现链式调用的？</strong><br><strong>2.AMD与CMD的区别？</strong><br><strong>3.描述单向数据流和双向绑定的差异？</strong><br><strong>4.jQuery如何创建空函数？</strong><br>答：<code>$.noop()</code></p>
+<h3 id="三、正则篇">三、正则篇</h3><p><strong>1.匹配字符串以字母开头，后面可以是数字，下划线，字母，长度为6-30？</strong><br><code>/^[a-zA-Z]\w{5,29}$/</code></p>
+<h3 id="四、库与框架篇">四、库与框架篇</h3><p><strong>1.jQuery是如何实现链式调用的？</strong><br><code>callback and return this.</code><br><strong>2.AMD与CMD的区别？</strong><br><strong>3.描述单向数据流和双向绑定的差异？</strong><br><strong>4.jQuery如何创建空函数？</strong><br><code>$.noop()</code></p>
 <h3 id="五、应用篇">五、应用篇</h3><p><strong>1.编写一个函数，输入指定类型的选择器(仅需支持id，class，tagName三种简单CSS选择器，无需兼容组合选择器)可以返回匹配的DOM节点，需考虑浏览器兼容性和性能。</strong><br><strong>2.实现一个简单的拖拽。(by 阿里)</strong><br><strong>3.编写一个函数，实现url上的参数查找。</strong><br><strong>4.实现图片预加载。</strong><br><strong>5.使用callee属性实现函数的递归调用。</strong><br><strong>6.给Array本地对象增加一个原型方法，他的用途是删除数组中重复的条目，并将新的数组返回。</strong><br><strong>7.1-1000的array，倒叙输出。（简单的换换脑子）</strong><br><strong>8.下面代码，f是否可以调用a和b？</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line"><span class="built_in">Object</span>.prototype.a = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line"><span class="built_in">Function</span>.prototype.b = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> f = <span class="keyword">new</span> F();</span><br></pre></td></tr></table></figure></p>
+<p><code>上述代码中，f为构造函数所实例化出来的对象，而非普通函数，且f继承自Object，所以很遗憾的是，f只能调用到Object原型链里扩展的a函数，b函数是调用不到的……</code></p>
 <p><img src="/img/comic/longmao.jpg" alt=""></p>
 
       </div>

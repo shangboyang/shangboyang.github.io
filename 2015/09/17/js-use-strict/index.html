@@ -15,7 +15,7 @@ use strict现在业务场景中用到的越来越多，目的也是为了让Js�
 <meta property="og:description" content="写了那么久的业务代码，记着了该记着的又常用的，但感觉好记性真的不如烂笔头，重复造轮子是必经之路，但不断夯实基础才是飞升之路的重中之重。
 use strict现在业务场景中用到的越来越多，目的也是为了让Js写得更加规范严谨，Js本身是弱类型语言，编写脚本的时候如果控制的不够，那么就很容易出现安全漏洞，比如变量未声明变成了全局变量，然后跑在了各个函数里使用，并且被重名变量更近一步的改写，导致出现错误值">
 <meta property="og:image" content="http://www.shangboyang.com/img/game/call_on_duty.jpg">
-<meta property="og:updated_time" content="2017-03-30T15:43:36.000Z">
+<meta property="og:updated_time" content="2017-03-30T15:45:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《回首Javascript基础》之严格模式">
 <meta name="twitter:description" content="写了那么久的业务代码，记着了该记着的又常用的，但感觉好记性真的不如烂笔头，重复造轮子是必经之路，但不断夯实基础才是飞升之路的重中之重。
@@ -122,7 +122,7 @@ use strict现在业务场景中用到的越来越多，目的也是为了让Js�
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
-        <p><img src="/img/game/call_on_duty.jpg" alt=""><br>写了那么久的业务代码，记着了该记着的又常用的，但感觉好记性真的不如烂笔头，重复造轮子是必经之路，但不断夯实基础才是飞升之路的重中之重。</p>
+        <p><img src="/img/game/call_on_duty.jpg" alt="使命召唤——use strict"><br>写了那么久的业务代码，记着了该记着的又常用的，但感觉好记性真的不如烂笔头，重复造轮子是必经之路，但不断夯实基础才是飞升之路的重中之重。</p>
 <p><code>use strict</code>现在业务场景中用到的越来越多，目的也是为了让Js写得更加规范严谨，Js本身是弱类型语言，编写脚本的时候如果控制的不够，那么就很容易出现安全漏洞，比如变量未声明变成了全局变量，然后跑在了各个函数里使用，并且被重名变量更近一步的改写，导致出现错误值，bug藏的异常的深，现在突然想起填过的深坑，所以写出安全的Js脚本是有多么的重要，那么这里再次做个详细的总结。</p>
 <h3 id="一、添加部署">一、添加部署</h3><p><code>Warning ： Strict mode is not supported in versions of Internet Explorer earlier than Internet Explorer 10.</code><br>这段是MSDN上的第一个警告就标明，IE10以下的版本是不兼容的，而我们当今的项目基本都是WebApp了，所以跟进严格是非常必要的，而不支持的版本也仅仅是当成在内存里丢了一个‘use strict’的字符串，并无任何问题。</p>
 <p>1、放置在脚本文件头部<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">"use strict"</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">testFunction</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> testvar = <span class="number">4</span>;</span><br><span class="line">    <span class="keyword">return</span> testvar;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里会语法报错</span></span><br><span class="line">testvar = <span class="number">5</span>;</span><br></pre></td></tr></table></figure></p>
@@ -147,7 +147,6 @@ use strict现在业务场景中用到的越来越多，目的也是为了让Js�
 <p>这里收归国有也是为了将来代码可以更好的支持ECMAScript6。</p>
 <p><code>strict mode</code>先把常用要注意的总结到这里，mark了不少Mozilla的内容。可能相信在这些约束下，Js可以变的越来越规范，很多同行可能会觉得如果去掉了这些“灵活”的内容，Js就不好玩了，我个人觉得恰恰相反，因为Js开发成本低但它的排障成本比其他任何语言都高很多，所以我们的代码需要去走“严格模式”。</p>
 <p>大家一起“use strict”起来吧！</p>
-<p>（PS.放些《使命召唤》的图片似乎更能表现“严格”的重要性。）</p>
 <p>参考文档：<br><a href="https://msdn.microsoft.com/en-us/library/br230269.aspx" target="_blank" rel="external">MSDN《Strict Mode (JavaScript)》</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="external">Mozilla 《严格模式》</a><br><a href="http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html" target="_blank" rel="external">阮一峰老师《Javascript 严格模式详解》</a></p>
 
       </div>
